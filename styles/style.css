@@ -148,6 +148,59 @@ nav ul {
     width: 100%;
 }
 
+/* banner section design over */
+
+/* main section design start */
+main {
+    background-image: url("../assets/bg.png");
+}
+main>section{
+    margin-top: 80px;
+}
+
+/* curriculum section start */
+
+
+.curriculum h3{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.curriculum-card-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.curriculum-card{
+    /* max-width: 368px; */
+    text-align: center;
+    border-radius: 19px;
+    padding: 50px 40px;
+    box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.bg-1{
+    background: linear-gradient( rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+}
+.bg-2{
+    background: linear-gradient( rgba(255, 244, 220, 1),rgba(255, 255, 255, 0));
+}
+.bg-3{
+    background: linear-gradient( rgba(238, 225, 255, 1),rgba(255, 255, 255, 0));
+}
+.curriculum-card>a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(100, 200, 255, 1);
+}
+.curriculum-card img{
+    max-width: 137px;
+    margin-bottom: 32px;
+}
+
+/* curriculum section over */
+
 
 
 
@@ -219,4 +272,14 @@ nav ul {
     .banner-txt {
         text-align: center;
     }
+
+    /* curriculum section responsive start */
+
+    .curriculum-card-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* curriculum section responsive Over */
 }
