@@ -19,6 +19,12 @@ body {
     padding: 25px;
 }
 
+.curriculum h3,
+.stories h3 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
 .cmn-heading {
     font-size: 2.875rem;
     font-weight: bold;
@@ -153,53 +159,127 @@ nav ul {
 /* main section design start */
 main {
     background-image: url("../assets/bg.png");
+    background-repeat: repeat-y;
 }
-main>section{
+
+main>section {
     margin-top: 80px;
 }
 
 /* curriculum section start */
 
 
-.curriculum h3{
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.curriculum-card-container{
+.curriculum-card-container {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
 
-.curriculum-card{
+.curriculum-card {
     /* max-width: 368px; */
     text-align: center;
     border-radius: 19px;
     padding: 50px 40px;
     box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 }
-.bg-1{
-    background: linear-gradient( rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+
+.bg-1 {
+    background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
 }
-.bg-2{
-    background: linear-gradient( rgba(255, 244, 220, 1),rgba(255, 255, 255, 0));
+
+.bg-2 {
+    background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
 }
-.bg-3{
-    background: linear-gradient( rgba(238, 225, 255, 1),rgba(255, 255, 255, 0));
+
+.bg-3 {
+    background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
 }
+
 .curriculum-card>a {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
     color: rgba(100, 200, 255, 1);
 }
-.curriculum-card img{
+
+.curriculum-card img {
     max-width: 137px;
     margin-bottom: 32px;
 }
 
+/* round-btn design */
+.round-btn {
+    padding: 10px 22.5px;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(254, 163, 1, 1);
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.round-btn-container {
+    text-align: center;
+    margin-top: 70px;
+}
+
 /* curriculum section over */
+
+/* stories section design start */
+
+.stories{
+    background: linear-gradient(to top,rgb(245, 222, 182),rgba(255, 255, 255, 1));
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.story-card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+}
+
+.story-card img {
+    margin-bottom: -30px;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.story-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #3CD8E8;
+    margin-left: 40px;
+}
+
+.story-card-txt {
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+
+.first-card {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+
+
+
 
 
 
@@ -209,7 +289,7 @@ main>section{
 
     /* Shared Responsive */
     body {
-        padding: 20px;
+        padding: 10px;
     }
 
     /* navbar responsive */
@@ -229,6 +309,18 @@ main>section{
 
     .banner-txt {
         text-align: center;
+    }
+
+    /* banner section responsive over */
+
+    /* story section responsive start */
+    .first-card {
+        display: none;
+    }
+
+    .story-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
 
@@ -273,13 +365,49 @@ main>section{
         text-align: center;
     }
 
+    /* banner responsive over */
+
     /* curriculum section responsive start */
 
-    .curriculum-card-container{
+    .curriculum-card-container {
         flex-direction: column;
         justify-content: center;
         gap: 30px;
     }
 
+    .round-btn {
+        display: none;
+    }
+
     /* curriculum section responsive Over */
+
+    /* stories section responsive start */
+    .first-card {
+        display: none;
+    }
+
+    .story-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .story-card-txt {
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .story-card-txt h5 {
+        font-size: 1rem;
+    }
+
+    .story-btn {
+        font-size: 0.56rem;
+        padding: 10px 14px;
+        margin-left: 15px;
+    }
+
+    .story-card img {
+        margin-bottom: -20px;
+    }
 }
