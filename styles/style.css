@@ -1,6 +1,222 @@
-
 .quicksand-font {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* universal style */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* universal Style Over */
+
+/* Shared style */
+body {
+    max-width: 1555px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.cmn-heading {
+    font-size: 2.875rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
+.cmn-btn-1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 60px;
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 12px;
+    border: none;
+}
+
+.cmn-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.7);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.cmn-sub-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Shared Style over */
+
+/* Header Section style start */
+
+/* Navbar section style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    display: none;
+}
+
+nav>div {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+nav>div>h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(17, 17, 17, 1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.first {
+    color: rgba(254, 163, 1, 1);
+}
+
+.second {
+    color: aqua;
+}
+
+.third {
+    color: green;
+}
+
+.fourth {
+    color: blue;
+}
+
+#nav-btn {
+    background-color: rgba(254, 163, 1, 1);
+}
+
+.nav-line {
+    display: none;
+}
+
+/* Nav bar design complete */
+
+/* banner section design start */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-txt {
+    max-width: 640px;
+}
+
+.banner-txt h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(17, 17, 17, 1);
+}
+
+.first-h1-word {
+    color: rgba(254, 163, 1, 1);
+}
+
+.last-h1-word {
+    color: rgba(1, 172, 253, 1);
+}
+
+.banner-img {
+    max-width: 470px;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+
+
+
+/* Responsive for medium device */
+@media screen and (min-width:600px) and (max-width:1023px) {
+
+    /* Shared Responsive */
+    body {
+        padding: 20px;
+    }
+
+    /* navbar responsive */
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* navbar responsive over */
+
+    /* banner section responsive */
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .banner-txt {
+        text-align: center;
+    }
+}
+
+
+/* Responsive for small device */
+@media screen and (max-width: 677px) {
+
+    /* Shared responsive */
+    body {
+        padding: 12px;
+    }
+
+    /* Navbar responsive */
+    nav {
+        margin-bottom: 5px;
+    }
+
+    nav>div>h4,
+    ul li a,
+    nav>button {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .nav-line {
+        display: block;
+    }
+
+    /* navbar responsive over */
+
+    /* banner section responsive */
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .banner-txt {
+        text-align: center;
+    }
 }
