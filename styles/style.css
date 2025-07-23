@@ -13,10 +13,11 @@
 /* universal Style Over */
 
 /* Shared style */
-body {
+body header,
+main {
     max-width: 1555px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 25px 25px 0px 25px;
 }
 
 .curriculum h3,
@@ -46,7 +47,8 @@ body {
     font-weight: 400;
     color: rgba(17, 17, 17, 0.7);
     margin-top: 24px;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    padding-bottom: 24px;
 }
 
 .cmn-sub-heading {
@@ -54,11 +56,13 @@ body {
     font-weight: bold;
     color: rgba(0, 0, 0, 1);
 }
-#nav-btn:hover{
+
+#nav-btn:hover {
     background-color: lawngreen;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: lawngreen;
     cursor: pointer;
 }
@@ -236,8 +240,8 @@ main>section {
 
 /* stories section design start */
 
-.stories{
-    background: linear-gradient(to top,rgb(245, 222, 182),rgba(255, 255, 255, 1));
+.stories {
+    background: linear-gradient(to top, rgb(245, 222, 182), rgba(255, 255, 255, 1));
 }
 
 .story-card-container {
@@ -283,21 +287,72 @@ main>section {
 .btn-container {
     text-align: center;
     margin-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
+/* stories section design Over */
 
+.marquee{
+    background-color: aqua;
+}
 
+/* Footer section design start */
 
+.foot {
+    background-color: #01ACFD;
+}
 
+.foot-data-container {
+    max-width: 1555px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 25px;
+}
+
+.foot-left>div {
+    display: flex;
+    gap: 10px;
+}
+
+.foot-left {
+    max-width: 400px;
+}
+
+.foot-heading,
+.foot-info,
+.foot-sub-heading {
+    color: rgba(255, 255, 255, 1);
+}
+
+.foot-anchor {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.foot-middle h5,
+.foot-middle li,
+.foot-right h5 {
+    margin-bottom: 15px;
+}
+
+.foot-right a {
+    margin-right: 10px;
+}
+
+/* footer section design over */
 
 
 /* Responsive for medium device */
 @media screen and (min-width:600px) and (max-width:1023px) {
 
     /* Shared Responsive */
-    body {
-        padding: 10px;
+    body header,
+    main {
+        padding: 10px 10px 0px 10px;
     }
 
     /* navbar responsive */
@@ -330,6 +385,14 @@ main>section {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+
+    /* story section responsive over */
+
+    /* footer section responsive start */
+    .foot-data-container {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 
@@ -337,8 +400,9 @@ main>section {
 @media screen and (max-width: 677px) {
 
     /* Shared responsive */
-    body {
-        padding: 12px;
+    body header,
+    main {
+        padding: 12px 12px 0px 12px;
     }
 
     /* Navbar responsive */
@@ -347,7 +411,7 @@ main>section {
     }
 
     nav>div>h4,
-    ul li a,
+    nav ul li a,
     nav>button {
         display: none;
     }
@@ -418,4 +482,13 @@ main>section {
     .story-card img {
         margin-bottom: -20px;
     }
+
+    /* story section responsive over */
+
+    /* footer section start */
+    .foot-data-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    /* footer design over */
 }
